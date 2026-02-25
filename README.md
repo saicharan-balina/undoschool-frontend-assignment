@@ -4,9 +4,7 @@
 
 https://saicharan-balina.github.io/undoschool-frontend-assignment/
 
-## 🎥 Video Walkthrough
 
-<!-- TODO: Add your Loom/YouTube link here -->
 
 ---
 

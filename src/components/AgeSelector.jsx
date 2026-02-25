@@ -43,7 +43,7 @@ const AgeSelector = () => {
         </div>
 
         <div
-          className="flex gap-3 overflow-x-auto pb-2"
+          className="flex gap-3 overflow-x-auto px-2 py-2 -mx-2"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {ageGroups.map((age) => {

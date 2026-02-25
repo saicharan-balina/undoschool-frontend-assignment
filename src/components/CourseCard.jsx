@@ -2,7 +2,7 @@ import React from 'react';
 
 const CourseCard = ({ course }) => {
   return (
-    <div className="flex-shrink-0 w-[270px]">
+    <div className="flex-shrink-0 w-[270px] group">
       {/* Rating row — ABOVE the card */}
       <div className="flex items-center gap-1 mb-2 px-1">
         <svg className="w-3.5 h-3.5 text-[#EAB308] fill-current" viewBox="0 0 24 24">
@@ -12,16 +12,19 @@ const CourseCard = ({ course }) => {
       </div>
 
       {/* Card */}
-      <div className={`bg-white rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] overflow-hidden hover:shadow-lg transition-shadow duration-300 ${
-        course.badge === 'Selling Fast' ? 'ring-2 ring-[#60A5FA]' : ''
-      }`}>
+      <div className={`bg-white rounded-[12px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] overflow-hidden
+        transition-all duration-300 ease-out ring-2 ring-transparent
+        group-hover:-translate-y-2 group-hover:shadow-[0_16px_40px_rgba(0,0,0,0.14)] group-hover:ring-[#60A5FA]
+      `}>
         {/* Thumbnail */}
-        <div className="relative">
+        <div className="relative overflow-hidden">
           <img
             src={course.image}
             alt={course.title}
-            className="w-full h-40 object-cover"
+            className="w-full h-40 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           />
+          {/* dark overlay on hover */}
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
           {course.badge && (
             <span className="absolute top-3 left-3 bg-[#F97316] text-white text-[11px] font-semibold px-3 py-1 rounded-[6px]">
               {course.badge}
@@ -45,9 +48,12 @@ const CourseCard = ({ course }) => {
           </div>
 
           {/* Title */}
-          <h3 className="text-[15px] font-semibold leading-[22px] text-[#111827] line-clamp-2 mb-3">
+          <h3 className="text-[15px] font-semibold leading-[22px] text-[#111827] line-clamp-2 mb-1 group-hover:text-[#6B21A8] transition-colors duration-200">
             {course.title}
           </h3>
+
+          {/* Description */}
+          <p className="text-[12px] text-[#6B7280] line-clamp-2 mb-3">{course.description}</p>
 
           {/* Instructor */}
           <div className="flex items-center gap-2 mb-4">
@@ -76,8 +82,9 @@ const CourseCard = ({ course }) => {
               </span>
               <span className="font-semibold text-[#111827]">₹{course.price}</span>
             </div>
-            <button className="w-8 h-8 bg-[#F3F4F6] rounded-[8px] flex items-center justify-center hover:bg-gray-200 transition-colors flex-shrink-0">
-              <svg className="w-4 h-4 text-[#374151]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button className="w-8 h-8 bg-[#F3F4F6] rounded-[8px] flex items-center justify-center
+              group-hover:bg-[#6B21A8] transition-colors duration-200 flex-shrink-0">
+              <svg className="w-4 h-4 text-[#374151] group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </button>

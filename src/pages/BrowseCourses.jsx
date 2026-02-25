@@ -30,10 +30,10 @@ const BrowseCourses = () => {
           </div>
 
           {/* Scroll row with arrows */}
-          <div className="relative">
+          <div className="relative -mx-2">
             <button
               onClick={() => scroll('left')}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow hidden lg:flex border border-[#E5E7EB]"
+              className="absolute left-2 top-1/2 -translate-y-1/2 -translate-x-5 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow hidden lg:flex border border-[#E5E7EB]"
             >
               <svg className="w-5 h-5 text-[#374151]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -42,7 +42,7 @@ const BrowseCourses = () => {
 
             <div
               ref={sectionRef}
-              className="flex gap-5 overflow-x-auto pb-4"
+              className="flex gap-5 overflow-x-auto px-2 pb-4 pt-2"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {courses.map((course) => (
@@ -52,7 +52,7 @@ const BrowseCourses = () => {
 
             <button
               onClick={() => scroll('right')}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow hidden lg:flex border border-[#E5E7EB]"
+              className="absolute right-2 top-1/2 -translate-y-1/2 translate-x-5 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow hidden lg:flex border border-[#E5E7EB]"
             >
               <svg className="w-5 h-5 text-[#374151]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -93,7 +93,7 @@ const BrowseCourses = () => {
             <p className="text-[16px] font-normal text-[#6B7280]">Expert instructors who make learning fun and engaging for every child</p>
           </div>
           <div
-            className="flex gap-6 overflow-x-auto pb-4"
+            className="flex gap-6 overflow-x-auto px-2 pb-4 pt-2 -mx-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {teachers.map((teacher) => (
@@ -112,7 +112,7 @@ const BrowseCourses = () => {
             </h2>
           </div>
           <div
-            className="flex gap-5 overflow-x-auto pb-4"
+            className="flex gap-5 overflow-x-auto px-2 pb-4 pt-2 -mx-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {courses.map((course) => (
@@ -148,7 +148,7 @@ const BrowseCourses = () => {
 
           {/* Category Courses row */}
           <div
-            className="flex gap-5 overflow-x-auto pb-4"
+            className="flex gap-5 overflow-x-auto px-2 pb-4 pt-2 -mx-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {courses.map((course) => (
@@ -170,7 +170,7 @@ const BrowseCourses = () => {
               <TimeFilterCard key={slot.id} timeSlot={slot} />
             ))}
           </div>
-          <div className="flex gap-5 overflow-x-auto pb-4" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="flex gap-5 overflow-x-auto px-2 pb-4 pt-2 -mx-2" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             {courses.slice(0, 3).map((course) => (
               <CourseCard key={`time-${course.id}`} course={{ ...course, badge: 'Morning class' }} />
             ))}

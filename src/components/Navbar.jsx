@@ -36,8 +36,9 @@ const Navbar = () => {
               Login
             </button>
             {/* Register — purple rounded-full pill */}
-            <button className="bg-[#6B21A8] text-white font-semibold px-6 py-2.5 text-[14px] rounded-full hover:bg-[#5B1898] transition-colors whitespace-nowrap shadow-sm">
-              Register for free
+            <button className="bg-[#6B21A8] text-white font-semibold px-4 sm:px-6 py-2 sm:py-2.5 text-[12px] sm:text-[14px] rounded-full hover:bg-[#5B1898] transition-colors whitespace-nowrap shadow-sm">
+              <span className="hidden sm:inline">Register for free</span>
+              <span className="sm:hidden">Sign up</span>
             </button>
           </div>
 

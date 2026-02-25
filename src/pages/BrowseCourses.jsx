@@ -24,9 +24,9 @@ const BrowseCourses = () => {
       <section className="py-[60px] px-4 sm:px-8 lg:px-[116px] bg-white">
         <div className="max-w-[1208px] mx-auto">
           {/* Heading */}
-          <div className="mb-8">
-            <h2 className="text-[36px] font-bold leading-[44px] text-[#111827] mb-2">{title}</h2>
-            <p className="text-[16px] font-normal text-[#6B7280]">{subtitle}</p>
+          <div className="mb-6 sm:mb-8">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827] mb-2">{title}</h2>
+            <p className="text-[14px] sm:text-[16px] font-normal text-[#6B7280]">{subtitle}</p>
           </div>
 
           {/* Scroll row with arrows */}
@@ -84,13 +84,13 @@ const BrowseCourses = () => {
 
       {/* Learn from Top Teachers */}
       <section
-        className="py-[60px] px-4 sm:px-8 lg:px-[116px]"
+        className="py-10 sm:py-[60px] px-4 sm:px-8 lg:px-[116px]"
         style={{ background: 'linear-gradient(160deg, #EDE9FE 0%, #F5F3FF 40%, #FFFFFF 100%)' }}
       >
         <div className="max-w-[1208px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-[36px] font-bold leading-[44px] text-[#111827] mb-2">Learn from Top Teachers</h2>
-            <p className="text-[16px] font-normal text-[#6B7280]">Expert instructors who make learning fun and engaging for every child</p>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827] mb-2">Learn from Top Teachers</h2>
+            <p className="text-[14px] sm:text-[16px] font-normal text-[#6B7280]">Expert instructors who make learning fun and engaging for every child</p>
           </div>
           <div
             className="flex gap-6 overflow-x-auto px-2 pb-4 pt-2 -mx-2"
@@ -104,10 +104,10 @@ const BrowseCourses = () => {
       </section>
 
       {/* Webinar Section */}
-      <section className="py-[60px] px-4 sm:px-8 lg:px-[116px] bg-white">
+      <section className="py-10 sm:py-[60px] px-4 sm:px-8 lg:px-[116px] bg-white">
         <div className="max-w-[1208px] mx-auto">
-          <div className="mb-8 text-center">
-            <h2 className="text-[36px] font-bold leading-[44px] text-[#111827]">
+          <div className="mb-6 sm:mb-8 text-center">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827]">
               ── Webinar starting within 24 hrs ──
             </h2>
           </div>
@@ -123,11 +123,11 @@ const BrowseCourses = () => {
       </section>
 
       {/* Popular Categories */}
-      <section className="py-[60px] px-4 sm:px-8 lg:px-[116px] bg-[#F9FAFB]">
+      <section className="py-10 sm:py-[60px] px-4 sm:px-8 lg:px-[116px] bg-[#F9FAFB]">
         <div className="max-w-[1208px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-[36px] font-bold leading-[44px] text-[#111827] mb-2">Popular Categories</h2>
-            <p className="text-[16px] font-normal text-[#6B7280]">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827] mb-2">Popular Categories</h2>
+            <p className="text-[14px] sm:text-[16px] font-normal text-[#6B7280]">
               Pick what you love most! These categories have everything you need to learn something awesome ✨
             </p>
           </div>
@@ -159,11 +159,11 @@ const BrowseCourses = () => {
       </section>
 
       {/* Filter with Time */}
-      <section className="py-[60px] px-4 sm:px-8 lg:px-[116px] bg-white">
+      <section className="py-10 sm:py-[60px] px-4 sm:px-8 lg:px-[116px] bg-white">
         <div className="max-w-[1208px] mx-auto">
-          <div className="mb-8">
-            <h2 className="text-[36px] font-bold leading-[44px] text-[#111827] mb-2">Filter with Time</h2>
-            <p className="text-[16px] font-normal text-[#6B7280]">Choose the perfect time that fits your child's schedule</p>
+          <div className="mb-6 sm:mb-8">
+            <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827] mb-2">Filter with Time</h2>
+            <p className="text-[14px] sm:text-[16px] font-normal text-[#6B7280]">Choose the perfect time that fits your child's schedule</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mb-8">
             {timeSlots.map((slot) => (

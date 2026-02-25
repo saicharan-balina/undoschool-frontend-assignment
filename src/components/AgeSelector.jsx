@@ -29,16 +29,16 @@ const AgeSelector = () => {
 
   return (
     <section
-      className="py-[60px] px-4 sm:px-8 lg:px-[116px]"
+      className="py-10 sm:py-[60px] px-4 sm:px-8 lg:px-[116px]"
       style={{ background: 'linear-gradient(180deg, #FDF4FF 0%, #FFFFFF 100%)' }}
     >
       <div className="max-w-[1208px] mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-[36px] font-bold leading-[44px] text-[#111827] mb-2">
+          <h2 className="text-[26px] sm:text-[32px] lg:text-[36px] font-bold leading-tight lg:leading-[44px] text-[#111827] mb-2">
             How Old Are You? 🎯
           </h2>
-          <p className="text-[16px] font-normal text-[#6B7280]">
-            Pick your age and find the perfect courses just for you!
+          <p className="text-[14px] sm:text-[16px] font-normal text-[#6B7280]">
+            Pick your age and find the perfect courses just for you! ✨
           </p>
         </div>
 
